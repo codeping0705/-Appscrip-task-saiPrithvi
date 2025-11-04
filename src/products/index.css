@@ -329,3 +329,35 @@
 
 
 
+.product-items {
+  width: 300px;
+  margin: 12px;
+  height: 420px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* ✅ Prevent image stretch */
+.product-image {
+  width: 300px;
+  height: 350px;
+  object-fit: contain; /* <---- important fix */
+  background-color: #f8f8f8;
+}
+
+/* ✅ Product Name Styling Fix */
+.product-name {
+  color: #000000;
+  font-family: Bahnschrift;
+  font-weight: 700;
+  font-size: 16px;
+  height: 38px;              /* fixed height */
+  margin-top: 6px;
+  margin-bottom: 6px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;      /* ensures 2 line clamp */
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
