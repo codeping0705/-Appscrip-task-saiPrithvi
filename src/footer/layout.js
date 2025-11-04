@@ -28,32 +28,27 @@ const acceptPaymentItems = [
   {
     id: 1,
     logo: "https://res.cloudinary.com/dlhgbo0ji/image/upload/v1761981878/google-pay_kjatwp.png",
-    altText: 'GPAY'
+    altText: "GPAY",
   },
   {
     id: 2,
     logo: "https://res.cloudinary.com/dlhgbo0ji/image/upload/v1761981893/money_plkagi.png",
-    altText: 'MASTERCARD'
+    altText: "MASTERCARD",
   },
   {
     id: 3,
     logo: "https://res.cloudinary.com/dlhgbo0ji/image/upload/v1761981901/paypal_twbeae.png",
-    altText: 'PAYPAL'
+    altText: "PAYPAL",
   },
   {
     id: 4,
     logo: "https://res.cloudinary.com/dlhgbo0ji/image/upload/v1761981907/amex_nhkxkz.png",
-    altText: 'AMEX'
+    altText: "AMEX",
   },
   {
     id: 5,
     logo: "https://res.cloudinary.com/dlhgbo0ji/image/upload/v1761981885/apple-pay_l3cqyj.png",
-    altText: 'APPLEPAY'
-  },
-  {
-    id: 6,
-    logo: "https://res.cloudinary.com/dlhgbo0ji/image/upload/v1761982911/Group_136195_dd6c2i.png",
-    altText: 'DPAY'
+    altText: "APPLEPAY",
   },
 ];
 
@@ -88,8 +83,8 @@ export default function Footer({ children }) {
             </button>
           </div>
           <button className="subscribe-btn-md" type="button">
-              SUBSCRIBE
-            </button>
+            SUBSCRIBE
+          </button>
           <hr className="hr-line-sm" />
         </div>
         <div className="contact-us-container">
@@ -97,7 +92,10 @@ export default function Footer({ children }) {
           <h1 className="sm-sub-text">CALL US</h1>
           <div className="call-us-sm-container">
             <p className="number-text-sm">+44 221 133 5360</p>
-            <img src="https://res.cloudinary.com/dlhgbo0ji/image/upload/v1761977166/Star_1_wljg2u.png" alt="star logo" />
+            <img
+              src="https://res.cloudinary.com/dlhgbo0ji/image/upload/v1761977166/Star_1_wljg2u.png"
+              alt="star logo"
+            />
             <p className="email-text-sm">customercare@mettamuse.com</p>
           </div>
           <hr className="hr-line-sm" />
@@ -232,7 +230,11 @@ export default function Footer({ children }) {
             <ul className="accept-payment-list-container">
               {acceptPaymentItems.map((eachLogo) => (
                 <li className="payment-box" key={eachLogo.id}>
-                  <img className="payment-icon-logo" src={eachLogo.logo} alt={eachLogo.altText} />
+                  <img
+                    className="payment-icon-logo"
+                    src={eachLogo.logo}
+                    alt={eachLogo.altText}
+                  />
                 </li>
               ))}
             </ul>
