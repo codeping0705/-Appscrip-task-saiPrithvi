@@ -1,0 +1,90 @@
+.sub-head-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  border: 1px solid #e5e5e5;
+  border-bottom-width: 1px;
+  border-right-width: 0px;
+  border-left-width: 0px;
+  border-top-width: 0px;
+  scroll-behavior: smooth;
+  transition: 1s;
+}
+
+.sub-head-list-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+
+.tab-item-sm-container {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+}
+
+@media screen and (min-width: 768px) {
+  .tab-item-sm-container {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .sub-head-list-container {
+    width: 76%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .sub-head-list-container {
+    width: 100%;
+  }
+  .sub-head-container {
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.sub-head-description {
+  color: black;
+  font-family: Bahnschrift;
+  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.description-details {
+  font-family: Bahnschrift;
+  font-size: 20px;
+  font-weight: 300;
+  color: black;
+}
+
+.home-tab-sm {
+  font-family: Bahnschrift;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 18px;
+  letter-spacing: 0px;
+  color: #bfc8cd;
+}
+
+.shop-tab-sm {
+  font-family: Bahnschrift;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 18px;
+  letter-spacing: 0px;
+  color: #000000;
+}
+
+.vl {
+  border-left: 3px solid #bfc8cd;
+  height: 20px;
+  margin: 10px;
+}

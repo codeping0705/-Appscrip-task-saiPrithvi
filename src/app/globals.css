@@ -1,0 +1,84 @@
+/* ✅ Global CSS with max-width similar to Tailwind max-w-7xl (1280px)
+   ⚠️ As requested: No design, font-size, or layout order changes — only fixed + centered
+*/
+
+/* Root Styling */
+:root {
+  --primary-color: #0f172a;
+  --secondary-color: #1e293b;
+  --accent-color: #2563eb;
+  --text-color: #334155;
+  --light-bg: #fff;
+  --border-color: #e2e8f0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+  background-color: var(--light-bg);
+  color: var(--text-color);
+}
+
+/* ✅ Global Centered Container with max-width 1280px */
+.app-container {
+  max-width: 1800px; /* Tailwind max-w-7xl equivalent */
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Keep rest of your CSS below without reordering or changing design */
+
+header {
+  width: 100%;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  border-bottom: 1px solid var(--border-color);
+}
+
+header .logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+header nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  font-size: 16px;
+  color: var(--text-color);
+  font-weight: 500;
+}
+
+/* Example container usage for pages */
+.page-wrapper {
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+footer {
+  width: 100%;
+  padding: 30px 0;
+  background-color: #fff;
+  text-align: center;
+  border-top: 1px solid var(--border-color);
+  margin-top: 40px;
+}
+
+/* Add your remaining CSS below this — unchanged */
